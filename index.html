@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/ico.ico" type="image/x-icon">
+    <title>Caffé Vergnano 1882</title>
+    <style>
+        @font-face {
+            font-family: 'revenue';
+            src: url('source/revenue.ttf') format('truetype');
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('img/bgg.png') fixed transparent;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-top: -35px;
+        }
+        
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .logo {
+            width: 85px;
+            height: 85px;
+            margin: 0; /* Remove margin to center the logo */
+        }
+
+        h1 {
+             font-family: 'revenue', 'revenu', cursive; /* Use custom font, fallback to 'Pacifico', and then fallback to cursive */
+             color: #000;
+             margin: 0;
+             font-size: 35px;
+        }
+
+
+        .photos {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .photo-item {
+            margin: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            transition: transform 0.2s;
+        }
+
+        .photo-item img {
+            max-width: 60%;
+            height: auto;
+            width: 100%;
+            border-radius: 60px;
+        }
+
+        .photo-item:hover {
+            transform: scale(1.1);
+        }
+
+        .aboutus {
+            text-align: center;
+            font-family: 'revenue', cursive;
+            color: #000000;
+            margin-top:  0;
+            font-size: 20px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: space-between;
+            width: 200px;
+        }
+
+        .social-icons a {
+            text-decoration: none;
+        }
+
+        .social-icons img {
+            width: 60px;
+            height: 60px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <h1>Caffé Vergnano<br>1882</h1>
+    </div>
+    
+    <div class="photos">
+        <a href="Menu.html" class="photo-item">
+            <img src="img/menu.jpg" alt="Photo 1">
+        </a>
+        <a href="Boutique.html" class="photo-item">
+            <img src="img/boutique.jpg" alt="Photo 2">
+        </a>
+    </div>
+
+    <div class="social-icons">
+        <a href="https://m.facebook.com/profile.php/?id=100064879908655&name=xhp_nt__fb__action__open_user" target="_blank">
+            <img src="img/fblogo1.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/laboutiqueducafe1/" target="_blank">
+            <img src="img/instalogo.png" alt="Instagram">
+        </a>
+        <a href="https://wa.me/212661138859" target="_blank">
+            <img src="img/walogo.png" alt="WhatsApp">
+        </a>
+    </div>
+
+    <div>
+        </div>
+        <br>
+        <a href="about.html" class="aboutus">À propos de nous</a>
+    </div>
+</body>
+</html>
