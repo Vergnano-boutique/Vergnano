@@ -8,13 +8,13 @@
     <link rel="icon" href="img/ico.ico" type="image/x-icon">
     <title>Vergnano caffé - A propos de nous</title>
     <style>
-           @font-face {
-            font-family: 'revenue'; /* You can name it whatever you like */
-            src: url('source/revenue.ttf') format('truetype'); /* Specify the path to your font file */
+                @font-face {
+            font-family: 'revenue';
+            src: url('Sources/revenue.ttf') format('truetype');
         }
         @font-face {
-            font-family: 'belgiano'; /* You can name it whatever you like */
-            src: url('source/Belgiano.ttf') format('truetype'); /* Specify the path to your font file */
+            font-family: 'Belgiano';
+            src: url('Sources/Belgiano.otf') format('opentype');
         }
 
         body {
@@ -59,7 +59,7 @@
 
         #texte {
             display: none;
-            font-family: 'revenue', sans-serif;
+            font-family: 'Belgiano', sans-serif;
           /*  font-weight: bold;*/
             display: none;
             padding-top: 20px;
@@ -85,7 +85,7 @@
         <img src="img/logo.png" width="200" class="bimg">
     </div>
     <div id="texte" class="centered">
-        <p><b>Le caffé Vergnano est un café artisanale avec un temps de torréfaction lent (18 à 22 minutes). </br></br>Les grains sont grillés séparément par origine, afin d’obtenir le degré de cuisson optimal, pour chaque cru. Et ainsi les meilleurs arômes !</br>
+        <p><b>Le caffé Vergnano est un café artisanale avec un temps de torréfaction lent</br>(18 à 22 minutes). </br></br>Les grains sont grillés séparément par origine, afin d’obtenir le degré de cuisson optimal, pour chaque cru. Et ainsi les meilleurs arômes !</br>
 
         </br>Chaque tasse est une symphonie de saveurs soigneusement cultivées et torréfiées à la perfection.</br></br> Notre quête de la qualité commence dans les plantations, où seules les meilleures variétés de café sont sélectionnées Tout est fait pour que le café garde ses vertus, sa qualité, et son goût unique.</br>
             
@@ -120,6 +120,10 @@
 
   // Appeler la fonction pour afficher le texte progressivement
   afficherTexteProgressivement();
+
+  document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
     </script>
 </body>
 </html>

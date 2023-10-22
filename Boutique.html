@@ -9,8 +9,8 @@
     <style>
 
 @font-face {
-            font-family: 'revenue'; /* You can name it whatever you like */
-            src: url('source/revenue.ttf') format('truetype'); /* Specify the path to your font file */
+            font-family: 'revenue';
+            src: url('Sources/revenue.ttf') format('truetype');
         }
 
         body {
@@ -453,6 +453,9 @@ function simulatePageTransition() {
 // Add an event listener to simulate the page transition
 document.addEventListener('DOMContentLoaded', simulatePageTransition);
 
+document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
     </script>
 </body>
 </html>
